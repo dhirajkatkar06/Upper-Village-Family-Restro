@@ -36,12 +36,16 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose, items, onUpdat
       <div className={`fixed top-0 right-0 h-full w-full md:w-[450px] bg-[#0d0d0d] border-l border-white/5 z-[70] transition-transform duration-500 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
         <div className="flex flex-col h-full">
           {/* Header */}
-          <div className="p-8 border-b border-white/5 flex justify-between items-center bg-[#0d0d0d]">
+          <div className="sticky top-0 z-20 p-6 md:p-8 border-b border-white/5 flex justify-between items-center bg-[#0d0d0d]">
             <div className="flex items-center gap-3">
               <ShoppingBag className="text-[#c5a059]" size={24} />
               <h2 className="font-serif text-2xl text-white">Your Selection</h2>
             </div>
-            <button onClick={onClose} className="p-2 text-stone-500 hover:text-white transition-colors">
+            <button
+              onClick={onClose}
+              className="p-3 rounded-full text-stone-400 hover:text-white hover:bg-white/10 transition-colors"
+              aria-label="Close cart"
+            >
               <X size={24} />
             </button>
           </div>
