@@ -33,10 +33,19 @@ const CartDrawer: React.FC<CartDrawerProps> = ({ isOpen, onClose, items, onUpdat
       />
 
       {/* Drawer */}
-      <div className={`fixed top-0 right-0 h-full w-full md:w-[450px] bg-[#0d0d0d] border-l border-white/5 z-[70] transition-transform duration-500 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      {/* <div className={`fixed top-0 right-0 h-full w-full md:w-[450px] bg-[#0d0d0d] border-l border-white/5 z-[70] transition-transform duration-500 ease-in-out transform ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}> */}
+      <div
+        className={`fixed right-0 top-[80px] h-[calc(100vh-80px)] w-full md:w-[450px] 
+  bg-[#0d0d0d] border-l border-white/5 z-[70] 
+  transition-transform duration-500 ease-in-out transform 
+  ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}
+      >
+
         <div className="flex flex-col h-full">
           {/* Header */}
-          <div className="sticky top-0 z-20 p-6 md:p-8 border-b border-white/5 flex justify-between items-center bg-[#0d0d0d]">
+          {/* <div className="sticky top-0 z-20 p-6 md:p-8 border-b border-white/5 flex justify-between items-center bg-[#0d0d0d]"> */}
+          <div className="sticky top-0 z-30 p-6 md:p-8 border-b border-white/5 flex justify-between items-center bg-[#0d0d0d]">
+
             <div className="flex items-center gap-3">
               <ShoppingBag className="text-[#c5a059]" size={24} />
               <h2 className="font-serif text-2xl text-white">Your Selection</h2>
