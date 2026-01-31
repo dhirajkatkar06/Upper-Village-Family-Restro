@@ -21,7 +21,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 350,
     category: 'Main Course',
     description: 'Aromatic basmati rice cooked with tender chicken pieces and house secret spices.',
-    image: 'https://images.unsplash.com/photo-1563379091339-03b21bc4a4f8?q=80&w=800',
+    image: '/images/Special_Chicken_Dum_Biryani.jpg',
     isSpicy: true,
     isVeg: false
   },
@@ -40,7 +40,7 @@ export const MENU_ITEMS: MenuItem[] = [
     price: 60,
     category: 'Breads',
     description: 'Soft clay-oven baked bread topped with fresh garlic and melted butter.',
-    image: 'https://images.unsplash.com/photo-1601050638917-3d84d46d0a06?q=80&w=800',
+    image: '/images/Buuter_garlic_naan.jpg',
     isVeg: true
   },
   {

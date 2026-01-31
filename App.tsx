@@ -420,7 +420,7 @@ const App: React.FC = () => {
               </p>
               <div className="flex items-center justify-center lg:justify-start gap-10">
                 <a href="#" className="text-stone-600 hover:text-[#c5a059] transition-all transform hover:scale-110"><Facebook size={24} /></a>
-                <a href="#" className="text-stone-600 hover:text-[#c5a059] transition-all transform hover:scale-110"><Instagram size={24} /></a>
+                <a href="instagram.com/hoteluppervillage?igsh=dTk4Y2N2eXc3ajhi" className="text-stone-600 hover:text-[#c5a059] transition-all transform hover:scale-110"><Instagram size={24} /></a>
                 <a href="#" className="text-stone-600 hover:text-[#c5a059] transition-all transform hover:scale-110"><Twitter size={24} /></a>
               </div>
             </div>
